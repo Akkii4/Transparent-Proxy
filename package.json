@@ -1,0 +1,34 @@
+{
+  "name": "transparent-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy_v1.js --network mumbai",
+    "upgrade": "npx hardhat run scripts/upgrade_v2.js --network mumbai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akkii4/Transparent-Proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akkii4/Transparent-Proxy/issues"
+  },
+  "homepage": "https://github.com/Akkii4/Transparent-Proxy#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
+    "@openzeppelin/contracts-upgradeable": "^4.8.2",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.0"
+  }
+}
